@@ -8,6 +8,13 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt(n) {
+
+//Math.sign will multiply by neg if original is neg and pos if pos
+  return parseInt(n.toString().split('').reverse().join('')) * Math.sign(n)
+
+}
+
+console.log(reverseInt(-400))
 
 module.exports = reverseInt;
